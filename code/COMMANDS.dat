@@ -1,0 +1,1000 @@
+  138  ls -lhtr
+  139  squeue  -u ishanu
+  140  squeue  
+  141  squeue   | grep broadwl
+  142  squeue   | grep PD
+  143  squeue   | grep PD | grep ishanu
+  144  squeue  -u ishanu
+  145  ls -lhtr
+  146  cat Htmp 
+  147  scp -r Htmp  ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  148  head -n 10 ../seq_n
+  149  head -n 10 ../seq_4_MYOD.dat  > tmp2
+  150  head -n 10 ../seq_4_HSPA8.dat >> tmp2
+  151  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp2 -D row -T symbolic -o Htmp2 " -N 28 -M 10 -T 10  -p broadwl
+  152  squeue  -u ishanu
+  153  scp -r Htmp2   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  154  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -h
+  155  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -f Htmp2 
+  156  ls -lhtr
+  157  scp -r out*   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  158  head -n 20 ../seq_4_MYOD.dat  > tmp2
+  159  head -n 20 ../seq_4_HSPA8.dat >> tmp2
+  160  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp2 -D row -T symbolic -o Htmp2 " -N 28 -M 10 -T 10  -p broadwl
+  161  squeue  -u ishanu
+  162  ls -lhtr
+  163  squeue  -u ishanu
+  164  ls -lhtr
+  165  squeue  -u ishanu
+  166  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -f Htmp2 
+  167  scp -r out*   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  168  scp -r Htmp2   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  169  ls
+  170  head -n 20 ../seq_6_MYOD.dat  > tmp2
+  171  head -n 10  ../seq_6_MYOD.dat  > tmp2
+  172  head -n 10  ../seq_6_HSPA8.dat >> tmp2
+  173  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp2 -D row -T symbolic -o Htmp2 " -N 28 -M 10 -T 10  -p broadwl
+  174  squeue  -u ishanu
+  175  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -f Htmp2 
+  176  scp -r Htmp2   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  177  scp -r out*   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  178  head -n 10  ../seq_5_MYOD.dat  > tmp3
+  179  head -n 10  ../seq_5_HSPA8.dat >> tmp3
+  180  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp3 -D row -T symbolic -o Htmp3 " -N 28 -M 10 -T 10  -p broadwl
+  181  squeue  -u ishanu
+  182  ls -lhtr
+  183  cat Htmp3
+  184  ls -lhtr
+  185  cat tmp3
+  186  sed 's/2/1/g' tmp3
+  187  sed 's/2/1/g' tmp3 > tmp33
+  188  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp33 -D row -T symbolic -o Htmp33 " -N 28 -M 10 -T 10  -p broadwl
+  189  squeue  -u ishanu
+  190  cat tmp33
+  191  cat Htmp33
+  192  scp -r Htmp33   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  193  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -f Htmp33
+  194  scp -r out*   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  195  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/embed  -f Htmp33
+  196  head -n 10  ../seq_0_HSPA8.dat >> tmp4
+  197  head -n 10  ../seq_0_MYOD.dat >> tmp4
+  198  launch__  -P "module load boost/1.63.0+gcc-6.2 ; /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/smash -f tmp4 -D row -T symbolic -o Htmp4 " -N 28 -M 10 -T 10  -p broadwl
+  199  squeue  -u ishanu
+  200  ls -lhtr
+  201  cat Htmp4
+  202  scp -r Htmp4   ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  203  cd ..
+  204  ls
+  205  scp -r seq*dat ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  206  cd smashed_data/
+  207  ls
+  208  scp -r smash*dat  ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  209  scp -r smash*out ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  210  ld
+  211  ls
+  212  cd ..
+  213  ls
+  214  cd cross_smash/
+  215  ls
+  216  cd ..
+  217  ls -lhtr
+  218  cd smashed_data/analysis_scripts/
+  219  ls
+  220  vi getgenesses_model.sh
+  221  ./getgenesses_model.sh
+  222  vi getgenesses_model.sh
+  223  ./getgenesses_model.sh
+  224  cd ..
+  225  history | grep complx
+  226  grep "%PIT" *BRCA2*mod | sed 's/.*_\([0-9]*\)_[^(]*(\([0-9]*\))/\1 \2/g' | sort -g -k1 > stat_complx_BRCA2.dat
+  227  grep "%PIT" *APP*mod | sed 's/.*_\([0-9]*\)_[^(]*(\([0-9]*\))/\1 \2/g' | sort -g -k1 > stat_complx_APP.dat
+  228  scp -r *mod  ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  229  scp -r stat*dat  ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  230  cd smashed_data/
+  231  ls -lhtr
+  232  scp -r *out  ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*
+  233  ls *APP*out
+  234  xterm3 &
+  235  ./bin/genESeSS -h
+  236  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.01 
+  237  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.05 
+  238  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.1
+  239  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.065
+  240  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.05
+  241  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.06
+  242  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.055
+  243  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.051
+  244  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_1_MYOC.dat  -T symbolic -D row -e 0.051
+  245  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_2_MYOC.dat  -T symbolic -D row -e 0.051
+  246  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_3_MYOC.dat  -T symbolic -D row -e 0.051
+  247  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row -e 0.051
+  248  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_1_1_MYOC.dat  -T symbolic -D row -e 0.051
+  249  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_2_2_MYOC.dat  -T symbolic -D row -e 0.051
+  250  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_3_3_MYOC.dat  -T symbolic -D row -e 0.051
+  251  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_2_2_MYOC.dat  -T symbolic -D row -e 0.051
+  252  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_2_2_MYOC.dat  -T symbolic -D row 
+  253  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row 
+  254  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size
+  255  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size | sed 's/[a-z]//g'
+  256  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size | sed 's/[a-z,A-Z]//g'
+  257  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size | sed 's/^[0-9]*//g' 
+  258  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size | sed 's/[^0-9]*//g' 
+  259  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat  -T symbolic -D row | grep size | sed 's/[^0-9]*//g' | head -n 1
+  260  for i in {0..11}; do ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_"$i"_"$i"_MYOC.dat  -T symbolic -D row | grep size | sed 's/[^0-9]*//g' | head -n 1; done
+  261  for i in {0..11}; do echo -n $i ;  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_"$i"_"$i"_MYOC.dat  -T symbolic -D row | grep size | sed 's/[^0-9]*//g' | head -n 1; done
+  262  for i in {0..11}; do echo -n $i " " ;  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_"$i"_"$i"_MYOC.dat  -T symbolic -D row | grep size | sed 's/[^0-9]*//g' | head -n 1; done
+  263  vi tmpdat.dat
+  264  gnuplot
+  265  ......................................................................................................................................................................................................
+  266  gnuplot111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  267  gnuplot
+  268  cd /project/ishanu/DEEPPURPLE/
+  269  ls
+  270  cd nathan/
+  271  ls
+  272  cd big_data_scripts/
+  273  ls -lhtr
+  274  squeue -u bartleyn
+  275  cd analysis/
+  276  ls
+  277  ls -lhtr
+  278  cat IXCLLmDKwO.out 
+  279  cat IXCLLmDKw_.sbc 
+  280  cd /project/ishanu/DEEPPURPLE/big_data/SEQ/
+  281  cd smashed_data/
+  282  ls
+  283  ls -lhtr
+  284  cat smash_10_10_MYOC.out 
+  285  cat smash_0_10_MYOC.out 
+  286  cat smash_0_10_MYOC.dat 
+  287  cat smash_10_10_MYOC.dat 
+  288  cat smash_10_10_MYOD.dat 
+  289  cat smash_10_10_PER2.dat 
+  290  cat smash_10_10_HSPA8.dat 
+  291  grep " 1 2 2 2 2 1 2 2 0 1 2 2 2" smash_*dat
+  292  cat smash_10_10_HSPA8.dat 
+  293  grep "  0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2 2 1 2 2 0 1 2 2 2 " smash_*dat
+  294  grep "  0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2  " smash_*dat
+  295  cat smash_10_10_HSPA8.dat 
+  296  grep "  0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat
+  297  grep "0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat
+  298  grep "0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat | wc -l
+  299  grep "2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat | wc -l
+  300  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat | wc -l
+  301  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat 
+  302  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1 0 1 2 1 1 2 2 2" smash_*dat | awk -F: '{print $1}'
+  303  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2 2 1" smash_*dat | awk -F: '{print $1}'
+  304  grep "1 2 2 2 0 2 1 1 2 1 1 1" smash_*dat | awk -F: '{print $1}'
+  305  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2 2 2" smash_*dat | awk -F: '{print $1}'
+  306  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0 2 2" smash_*dat | awk -F: '{print $1}'
+  307  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0" smash_*dat | awk -F: '{print $1}'
+  308  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0" smash_*dat | awk -F: '{print $1}'
+  309  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0" smash_*dat | awk -F: '{print $1}'
+  310  grep "2 2 2 0 2 1 1 2 1 1 1 0 0 0" smash_*dat | awk -F: '{print $1}'
+  311  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 0" smash_*dat | awk -F: '{print $1}'
+  312  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 1" smash_*dat | awk -F: '{print $1}'
+  313  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 1 0" smash_*dat | awk -F: '{print $1}'
+  314  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 1 0 0" smash_*dat | awk -F: '{print $1}'
+  315  grep "1 2 2 2 0 2 1 1 2 1 1 1 0 0 1 0 0 0" smash_*dat | awk -F: '{print $1}'
+  316  ls
+  317  cd ..
+  318  ls
+  319  cat seq_9_PER2.output 
+  320  cat seq_9_PER2.dat 
+  321  cat seq_9_PER2.dat  | wc -l
+  322  ls
+  323  cat seq_0_*
+  324  cat seq_0_*dat
+  325  ls
+  326  cd ..
+  327  ls
+  328  cd ..
+  329  ls
+  330  cd nathan/
+  331  ls
+  332  cd big_data_scripts/
+  333  ls
+  334  cd analysis/
+  335  ls
+  336  cd script_smash.sh 
+  337  cat script_smash.sh 
+  338  ls /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data
+  339  cd /project2/ishanu/DEEPPURPLE/code/code_semantic/
+  340  ./bin/genESeSS -h
+  341  module load gcc
+  342  module load boost
+  343  module load gsl
+  344  ./bin/genESeSS -h
+  345  ./bin/genESeSS -f /project/ishanu/DEEPPURPLE/big_data/SEQ/smashed_data/smash_0_0_MYOC.dat 
+  346  ls -lhtr
+  347  ./bin/genESeSS -h
+  348  xterm3 &
+  349  ls
+  350  cd /project2/ishanu/
+  351  cd DEEPPURPLE/
+  352  ls
+  353  cd code
+  354  ls
+  355  rm *~
+  356  ls
+  357  cd /project2/ishanu/
+  358  ls
+  359  cd flurun_/
+  360  ls
+  361  ls -lht
+  362  cd data/
+  363  ls -lht
+  364  head -n 2 flu_vac_div.csv 
+  365  pwd
+  366  grep 413 flu_vac_div.csv 
+  367  grep ",413," flu_vac_div.csv 
+  368  grep ",413," flu_vac_div.csv  > C_413.csv
+  369  head -n 1 C_413.csv 
+  370  head -n 1 flu_vac_div.csv 
+  371  head -n 1 C_413.csv 
+  372  cut -d "," 2- C_413.csv 
+  373  cut -d "," -f 2- C_413.csv 
+  374  cut -d "," -f 2,4- C_413.csv 
+  375  cut -d "," -f 2,4- C_413.csv | sed 's/,/ /g' > D_413.csv 
+  376  head D_413.csv 
+  377  pwd
+  378  grep -0.00114676988506 flu_vac_div.csv 
+  379  grep "-0.00114676988506" flu_vac_div.csv 
+  380  grep "0.00114676988506" flu_vac_div.csv 
+  381  grep "88506" flu_vac_div.csv 
+  382  grep "4676988506" flu_vac_div.csv 
+  383  grep "2.96459298851" flu_vac_div.csv 
+  384  head -n 1 flu_vac_div.csv 
+  385  head -n 1 flu_vac_div.csv | cut -d "," -f 20
+  386  head -n 2 flu_vac_div.csv | cut -d "," -f 20
+  387  head -n 2 flu_vac_div.csv | cut -d "," -f 1,20
+  388  head -n 2 flu_vac_div.csv | cut -d "," -f 1,2,20
+  389  head -n 20 flu_vac_div.csv | cut -d "," -f 1,2,20
+  390  head -n 20 flu_vac_div.csv | cut -d "," -f 1,2,3,20
+  391  head -n 414 flu_vac_div.csv | cut -d "," -f 1,2,3,20
+  392  head -n 314 flu_vac_div.csv | cut -d "," -f 1,2,3,20
+  393  head -n 354 flu_vac_div.csv | cut -d "," -f 1,2,3,20
+  394  cat flu_vac_div.csv | cut -d "," -f 1,2,3,20 | grep ",01001,"
+  395  cat flu_vac_div.csv 
+  396  head flu_vac_div.csv 
+  397  cut -d "," -f 2 flu_vac_div.csv 
+  398  cat flu_vac_div.csv | cut -d "," -f 1,2,3,20 | grep ",1001,"
+  399  cut -d "," -f 2 flu_vac_div.csv | sort | uniq
+  400  cut -d "," -f 2 flu_vac_div.csv | sort -g | uniq
+  401  cut -d "," -f 2 flu_vac_div.csv | sort -gr | uniq
+  402  cat flu_vac_div.csv | cut -d "," -f 1,2,3,20 | grep ",1003,"
+  403  head -n 314 flu_vac_div.csv | cut -d "," -f 1,2,3,20
+  404  cat flu_vac_div.csv | cut -d "," -f 1,2,3,20 | grep ",1003," | grep ",413,"
+  405  head -n 1flu_vac_div.csv 
+  406  head -n 1 flu_vac_div.csv 
+  407  head -n 1 flu_vac_div.csv | sed 's/,/\n/g'
+  408  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' > DATASTAT
+  409  sed -i 's/"//g' DATASTAT 
+  410  cat DATASTAT 
+  411  vi DATASTAT 
+  412  wc -l DATASTAT 
+  413  grep "_d_hus_0" DATASTAT 
+  414  grep "_d_hus" DATASTAT 
+  415  grep "_Hus" DATASTAT 
+  416  grep "_hus" DATASTAT 
+  417  grep "hus" DATASTAT 
+  418  vi DATASTAT 
+  419  grep "HUS" DATASTAT 
+  420  grep -n "HUS" DATASTAT 
+  421  cat -n DATASTAT 
+  422  cat -n DATASTAT > tmp
+  423  vi tmp
+  424  head -n 10 flu_vac_div.csv | awk '{print $1,$2,$3,$4,$5}'
+  425  head -n 10 flu_vac_div.csv | awk -F, '{print $1,$2,$3,$4,$5}'
+  426  awk -F, '{print $4}'  flu_vac_div.csv 
+  427  awk -F, '{print $3,$4}'  flu_vac_div.csv 
+  428  cd /project2/ishanu/flurun_/
+  429  ls -lhtr
+  430  cd RESULTS/
+  431  ls -lhtr
+  432  history | grep DIC
+  433  ls
+  434  cd resfiles/
+  435  ls
+  436  cat sorted_DIC_so_far.txt 
+  437  cat mcmc_res_factors_16_29.txt-113
+  438  cd ../
+  439  cd ../data/
+  440  ls
+  441  head -n 1 flu_vac_div.csv 
+  442  head -n 1 flu_vac_div.csv | sed 's/,/\n/g'
+  443  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g'
+  444  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' > factors.txt
+  445  cat factors.txt 
+  446  vi DATASTAT1
+  447  for i in `cat DATASTAT1`; do echo $i; done
+  448  for i in `cat DATASTAT1`; do echo -n $i; a=`grep -n $i factors.txt`; echo $a; done
+  449  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n $i factors.txt`; echo $a; done
+  450  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  451  cat factors.txt 
+  452  vi factors.txt 
+  453  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  454  vi factors.txt 
+  455  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  456  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done
+  457  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done > tmp
+  458  mv tmp  DATASTAT1
+  459  cat DATASTAT1
+  460  awk -F: '{print $2}' DATASTAT1
+  461  awk -F: '{print $1}' DATASTAT1
+  462  a=`awk -F: '{print $1}' DATASTAT1`
+  463  echo $a
+  464  a=`awk -F: '{print $1}' DATASTAT1 | sort -g`
+  465  echo $a
+  466  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g'`
+  467  echo $a
+  468  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g' | sed 's/$/,/g'`
+  469  echo $a
+  470  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv 
+  471  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  472  head factors.txt 
+  473  awk -F, '{print $2,$3,$4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  474  head data.dat 
+  475  awk '$2==312{print $0}' data.dat > data312.dat
+  476  cat data312.dat 
+  477  cut -d " " -f 1,3- data312.dat > data312_.dat
+  478  head data312_.dat 
+  479  sort -g -k1 data312_.dat 
+  480  sort -g -k1 data312_.dat > data312__.dat
+  481  head data312__.dat 
+  482  wc -l data312__.dat 
+  483  cut -d " " -f 1 data312__.dat 
+  484  cut -d " " -f 1 data312__.dat | printf "%05d\n"
+  485  printf "%05d\n" `cut -d " " -f 1 data312__.dat `
+  486  printf "%05d\n" `cut -d " " -f 1 data312__.dat ` | head
+  487  cd /project2/ishanu/flurun_/
+  488  ls -lhtr
+  489  cd RESULTS/
+  490  ls -lhtr
+  491  history | grep DIC
+  492  ls
+  493  cd resfiles/
+  494  ls
+  495  cat sorted_DIC_so_far.txt 
+  496  cat mcmc_res_factors_16_29.txt-113
+  497  cd ../
+  498  cd ../data/
+  499  ls
+  500  head -n 1 flu_vac_div.csv 
+  501  head -n 1 flu_vac_div.csv | sed 's/,/\n/g'
+  502  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g'
+  503  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' > factors.txt
+  504  cat factors.txt 
+  505  vi DATASTAT1
+  506  for i in `cat DATASTAT1`; do echo $i; done
+  507  for i in `cat DATASTAT1`; do echo -n $i; a=`grep -n $i factors.txt`; echo $a; done
+  508  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n $i factors.txt`; echo $a; done
+  509  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  510  cat factors.txt 
+  511  vi factors.txt 
+  512  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  513  vi factors.txt 
+  514  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  515  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done
+  516  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done > tmp
+  517  mv tmp  DATASTAT1
+  518  cat DATASTAT1
+  519  awk -F: '{print $2}' DATASTAT1
+  520  awk -F: '{print $1}' DATASTAT1
+  521  a=`awk -F: '{print $1}' DATASTAT1`
+  522  echo $a
+  523  a=`awk -F: '{print $1}' DATASTAT1 | sort -g`
+  524  echo $a
+  525  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g'`
+  526  echo $a
+  527  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g' | sed 's/$/,/g'`
+  528  echo $a
+  529  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv 
+  530  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  531  head factors.txt 
+  532  awk -F, '{print $2,$3,$4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  533  head data.dat 
+  534  awk '$2==312{print $0}' data.dat > data312.dat
+  535  cat data312.dat 
+  536  cut -d " " -f 1,3- data312.dat > data312_.dat
+  537  head data312_.dat 
+  538  sort -g -k1 data312_.dat 
+  539  sort -g -k1 data312_.dat > data312__.dat
+  540  head data312__.dat 
+  541  wc -l data312__.dat 
+  542  cut -d " " -f 1 data312__.dat 
+  543  cut -d " " -f 1 data312__.dat | printf "%05d\n"
+  544  printf "%05d\n" `cut -d " " -f 1 data312__.dat `
+  545  printf "%05d\n" `cut -d " " -f 1 data312__.dat ` | head
+  546  printf "%05d\n" `cut -d " " -f 1 data312__.dat ` | head > fips__
+  547  cd /project/ishanu/DEEPPURPLE/
+  548  ls
+  549  cd big_data/
+  550  ls
+  551  cd SEQ/
+  552  ls
+  553  cd smashed_data/
+  554  ls -lhtr
+  555  cat smash_0_4_MYOD.out 
+  556  cat smash_0_4_PER2.out
+  557  cat smash_0_3_PER2.out
+  558  cat smash_0_5_PER2.out
+  559  cat smash_0_6_PER2.out
+  560  cat smash_0_7_PER2.out
+  561  cat smash_0_4_BRCA2.out
+  562  cd ../cross_smash/
+  563  ls
+  564  ls *sh
+  565  cat cross_smash_script.sh
+  566  ./cross_smash_script.sh
+  567  squeue -u ishanu
+  568  ls *sh
+  569  ls
+  570  ls *sh
+  571  squeue -u ishanu
+  572  rm IXC*
+  573  mkdir cd smashed_data/
+  574  ls cd smashed_data/
+  575  ls *emb
+  576  ls *mod
+  577  ls *sh
+  578  pwd
+  579  cd genmod/
+  580  emacs -nw gen.sh
+  581  cd ../smashed_data/
+  582  ls -lhtr
+  583  cat stat_complx_MYOD.dat 
+  584  cat stat_complx_MYOC.dat 
+  585  gnuplot
+  586  cat stat_complx_PER2.dat 
+  587  cat stat_complx_BRCA2.dat 
+  588  cat stat_complx_MYOC.dat 
+  589  cat stat_complx_MYOD.dat 
+  590  scp -r *out ishanu@128.135.219:~/Dropbox/DEEPPURPLE/smash*/
+  591  exit
+  592  cd /project2/ishanu/flurun_/
+  593  ls -lhtr
+  594  cd RESULTS/
+  595  ls -lhtr
+  596  history | grep DIC
+  597  ls
+  598  cd resfiles/
+  599  ls
+  600  cat sorted_DIC_so_far.txt 
+  601  cat mcmc_res_factors_16_29.txt-113
+  602  cd ../
+  603  cd ../data/
+  604  ls
+  605  head -n 1 flu_vac_div.csv 
+  606  head -n 1 flu_vac_div.csv | sed 's/,/\n/g'
+  607  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g'
+  608  head -n 1 flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' > factors.txt
+  609  cat factors.txt 
+  610  vi DATASTAT1
+  611  for i in `cat DATASTAT1`; do echo $i; done
+  612  for i in `cat DATASTAT1`; do echo -n $i; a=`grep -n $i factors.txt`; echo $a; done
+  613  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n $i factors.txt`; echo $a; done
+  614  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  615  cat factors.txt 
+  616  vi factors.txt 
+  617  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  618  vi factors.txt 
+  619  for i in `cat DATASTAT1`; do echo -n $i " " ; a=`grep -n "$i" factors.txt`; echo $a; done
+  620  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done
+  621  for i in `cat DATASTAT1`; do  a=`grep -n "$i" factors.txt`; echo $a; done > tmp
+  622  mv tmp  DATASTAT1
+  623  cat DATASTAT1
+  624  awk -F: '{print $2}' DATASTAT1
+  625  awk -F: '{print $1}' DATASTAT1
+  626  a=`awk -F: '{print $1}' DATASTAT1`
+  627  echo $a
+  628  a=`awk -F: '{print $1}' DATASTAT1 | sort -g`
+  629  echo $a
+  630  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g'`
+  631  echo $a
+  632  a=`awk -F: '{print $1}' DATASTAT1 | sort -g | sed 's/^/\$/g' | sed 's/$/,/g'`
+  633  echo $a
+  634  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv 
+  635  awk -F, '{print $4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  636  head factors.txt 
+  637  awk -F, '{print $2,$3,$4, $5, $6, $7, $10, $11, $12, $13, $14, $15, $16, $17, $20, $21, $23, $24, $28, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $49, $50, $55, $56, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $74, $75, $76}' flu_vac_div.csv | sed 1d > data.dat
+  638  head data.dat 
+  639  awk '$2==312{print $0}' data.dat > data312.dat
+  640  cat data312.dat 
+  641  cut -d " " -f 1,3- data312.dat > data312_.dat
+  642  head data312_.dat 
+  643  sort -g -k1 data312_.dat 
+  644  sort -g -k1 data312_.dat > data312__.dat
+  645  head data312__.dat 
+  646  wc -l data312__.dat 
+  647  cut -d " " -f 1 data312__.dat 
+  648  cut -d " " -f 1 data312__.dat | printf "%05d\n"
+  649  printf "%05d\n" `cut -d " " -f 1 data312__.dat `
+  650  printf "%05d\n" `cut -d " " -f 1 data312__.dat ` | head
+  651  printf "%05d\n" `cut -d " " -f 1 data312__.dat ` | head > fips__
+  652  cat fips__ 
+  653  paste -d " " fips__ data312__.dat 
+  654  paste -d " " fips__ data312__.dat | head
+  655  paste -d " " fips__ data312__.dat 
+  656  wc -l fips__ 
+  657  for i in `cut -d " " -f 1 data312__.dat`; do printf "%05d\n" $i; done
+  658  for i in `cut -d " " -f 1 data312__.dat`; do printf "%05d\n" $i; done > fips__ 
+  659  wc -l fips__ 
+  660  paste -d " " fips__ data312__.dat 
+  661  paste -d " " fips__ data312__.dat | cut -d " " 1,3-
+  662  paste -d " " fips__ data312__.dat | cut -d " " -f 1,3-
+  663  paste -d " " fips__ data312__.dat | cut -d " " -f 1,3- > data312.csv
+  664  scp data312.csv ishanu@128.135.219.121:/home/ishanu/Dropbox/weather-from-Joshua-health_impacts/data_/recon
+  665  cat mcmc_res_factors_16_29.txt-113
+  666  cat ../RESULTS/mcmc_res_factors_16_29.txt-113
+  667  cat ../RESULTS/mcmc_res_factors_16_29.txt-113 | grep "***"
+  668  grep "*" ../RESULTS/mcmc_res_factors_16_29.txt-113 
+  669  grep "***" ../RESULTS/mcmc_res_factors_16_29.txt-113 
+  670  grep '***' ../RESULTS/mcmc_res_factors_16_29.txt-113 
+  671  grep "\*\*\*" ../RESULTS/mcmc_res_factors_16_29.txt-113 
+  672  grep "\*\*\*" ../RESULTS/mcmc_res_factors_16_29.txt-113 | awk '{print $1}'
+  673  awk '{print NF}' data312.csv 
+  674  grep "\*\*\*" ../RESULTS/mcmc_res_factors_16_29.txt-113 | awk '{print $1}'
+  675  cd /project/ishanu
+  676  ls
+  677  cd DEEPPURPLE/
+  678  LS
+  679  ls
+  680  cd big_data/
+  681  ls
+  682  cd SEQ/
+  683  ls
+  684  history | grep genesess
+  685  history | grep gen
+  686  history | grep cmpl
+  687  ls
+  688  history | grep compl
+  689  xterm3 &
+  690  ls
+  691  squeue  -u ishanu
+  692  rm IXC*
+  693  ls
+  694  ls *sh
+  695  rm *depx
+  696  ls
+  697  cd smashed_data/
+  698  ls
+  699  \
+  700  cd ..
+  701  ls -lhtr
+  702  ls *.sh
+  703  history | grep compl
+  704  cd smashed_data/
+  705  ls
+  706  ls *mod
+  707  cd ..
+  708  ls *mod
+  709  ls *sh
+  710  ls *depx
+  711  cd cross_smash/
+  712  ls *depx
+  713  rm *depx
+  714  ls
+  715  rm IXC*
+  716  ls
+  717  cd ..
+  718  mkdir genmod
+  719  cd genmod
+  720  \
+  721  ls
+  722  history | grep compl
+  723  cd ../cross_smash/
+  724  ls *sh
+  725  cat cross_smash_script.sh
+  726  history | grep compl
+  727  history | grep mod
+  728  history | grep gen
+  729  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/genESeSS 
+  730  module avail boost
+  731  module load boost/1.63.0+gcc-6.2
+  732  module load gsl\
+  733  module load gsl
+  734  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/genESeSS 
+  735  /project2/ishanu/DEEPPURPLE/code/code_semantic/bin/genESeSS -h
+  736  cd ../genmod/
+  737  chmod ugo+rwx gen.sh
+  738  ./gen.sh 
+  739  cd ..
+  740  cd smashed_data/
+  741  scp -r *out ishanu@128.135.219:~/Dropbox/DEEPPURPLE/smash*/
+  742  scp -r *out ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*/
+  743  scp -r stat* ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*/
+  744  cd ../cross_smash/
+  745  ls -lhtr
+  746  scp -r *dst ishanu@128.135.219.121:~/Dropbox/DEEPPURPLE/smash*/
+  747  cd  ..
+  748  cd smashed_data/
+  749  ls *mod
+  750  cat smash_0_0_MYOD.mod 
+  751  cat smash_0_3_MYOD
+  752  cat smash_4_0_MYOD.mod 
+  753  cat smash_0_0_MYOD.mod 
+  754  ls *mod
+  755  cat smash_0_0_MYOD.mod 
+  756  cat smash_4_4_MYOD.mod 
+  757  cat smash_3_3_MYOD.mod 
+  758  cd /project2/ishanu/flurun_/
+  759  cd RESULTS/
+  760  cd res
+  761  ls
+  762  ls -lhtr
+  763  cd resfiles/
+  764  ls -lhtr
+  765  cat mcmc_res_factors_16_29.txt-113
+  766  cd /project2/ishanu/flurun_/
+  767  ls
+  768  cd data/
+  769  ls
+  770  cat flu_vac_div.csv 
+  771  head flu_vac_div.csv 
+  772  head -n 1 flu_vac_div.csv 
+  773  scp flu_vac_div.csv ishanu@128.135.219.121:~/Dropbox
+  774  exit
+  775  accounts balance
+  776  squeue -u ishanu
+  777  cd /project2/ishanu/flurun_/
+  778  ls
+  779  cd RESULTS/
+  780  ls
+  781  cd resfiles/
+  782  ls
+  783  cat sorted_DIC_so_far.txt 
+  784  cat mcmc_res_factors_16_29.txt-113
+  785  pwd
+  786  accounts balance
+  787  squeue -u ishanu
+  788  squeue -u ishanucd /project2/ishanu/flurun_/
+  789  cd /project2/ishanu/flurun_/
+  790  cd RESULTS/
+  791  ls
+  792  cd resfiles/
+  793  ls -lhtr
+  794  cat sorted_DIC_so_far.txt 
+  795  cat sorted_DIC_so_far.txt | wc -l
+  796  ls
+  797  ls mcmc*
+  798  ls mcmc* | wc -l
+  799  ls ../mcmc* | wc -l
+  800  cd ..
+  801  ls -lhtr
+  802  cat res_parameters_16_29.txt-120
+  803  ls mcmc* | wc -l
+  804  grep DIC mcmc* 
+  805  cat mcmc_res.txt-1
+  806  grep DIC mcmc* 
+  807  grep DIC mcmc*  | sort -g -k3
+  808  grep DIC mcmc*  | sort -gr -k3
+  809  cat mcmc_res.txt
+  810  cat mcmc_res.txt-55 | grep Loca
+  811  grep DIC mcmc*  | sort -g -k3
+  812  grep DIC mcmc*  | sort -gr -k3
+  813  cat mcmc_res_factors_16_29.txt-55 | grep Loca
+  814  cat mcmc_res.txt-55 | grep Loca
+  815  cat mcmc_res.txt-55 | grep -A 2 Loca
+  816  cat mcmc_res_factors_16_29.txt-55 | grep -A 3  Loca
+  817  grep DIC mcmc*_*_*  | sort -gr -k3
+  818  grep DIC mcmc*_*_*  | sort -gr -k3 | wc -l
+  819  grep DIC mcmc*_*_*  | sort -gr -k3 | wc -l > tmp
+  820  for i in `awk -F: '{print $1}' tmp`; do grep Loca $i ; done
+  821  grep DIC mcmc*_*_*  | sort -gr -k3 > tmp
+  822  for i in `awk -F: '{print $1}' tmp`; do grep Loca $i ; done
+  823  for i in `awk -F: '{print $1}' tmp`; do grep -A 3 Loca $i ; done
+  824  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done
+  825  head tmp
+  826  cat mcmc_res_factors_16_29.txt-15
+  827  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done
+  828  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done | grep -v "post.mean"
+  829  a=`for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done | grep -v "post.mean" `
+  830  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done | grep -v "post.mean" > tmp1
+  831  a=`cat tmp1`
+  832  echo $a | sed 's/Location effects: //g'
+  833  echo $a | sed 's/Location effects: /\n/g'
+  834  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done | grep -v "post.mean" > tmp1
+  835  cat tmp1
+  836  a=`cat tmp1`
+  837  echo $a | sed 's/Location effects: /\n/g'
+  838  vi tmp1
+  839  for i in `awk -F: '{print $1}' tmp`; do grep -A 2 Loca $i ; done | grep -v "post.mean" > tmp1
+  840  sed -i '/^\s*$/d' tmp1
+  841  cat tmp1
+  842  awk -F: '{print $2}' tmp1
+  843  cat tmp1
+  844  cat tmp1 | sed 's/Location//g'
+  845  cat tmp1 | sed 's/Location effects//g'
+  846  cat tmp1 | sed 's/Location effects//g' | sed 's/://g'
+  847  cat tmp1 | sed 's/Location effects//g' | sed 's/://g' | wc -l
+  848  cat tmp1 | sed 's/Location effects//g' | sed 's/://g' | grep flu
+  849  cat tmp1 | sed 's/Location effects//g' | sed 's/://g' | grep flu | wc -l
+  850  cat tmp1 | sed 's/Location effects//g' | sed 's/://g' > tmp2
+  851  a=`cat tmp2`
+  852  echo $a | sed 's/flu/\n flu/g'
+  853  echo $a | sed 's/flu/\n flu/g' | wc -l
+  854  gedit tmp2 &
+  855  cat tmp2
+  856  scp tmp2 ishanu@128.135.219.121:~/Desktop
+  857  cat tmp1
+  858  cat tmp
+  859  scp tmp ishanu@128.135.219.121:~/Desktop
+  860  cd /project/ishanu
+  861  ls
+  862  cd /project2/ishanu
+  863  ls
+  864  cd 
+  865  pwd
+  866  ls
+  867  cd projects/
+  868  ls
+  869  cd /project/ishanu
+  870  ls
+  871  locate CRIME
+  872  cd INFPSYCHO_2/
+  873  ls
+  874  cd data
+  875  ls
+  876  cd ..
+  877  ls
+  878  cd bin/
+  879  l
+  880  ls
+  881  ls -lhtr
+  882  cd /project2
+  883  cd ishanu
+  884  ls
+  885  cd 
+  886  ls
+  887  ls -lhtr
+  888  cd privatemodules/
+  889  ls
+  890  cd ../
+  891  cd projects/
+  892  ls
+  893  cp CRIME.tgz /project2/ishanu
+  894  cd /project2/ishanu
+  895  ls
+  896  tar -xzvf CRIME.tgz 
+  897  cd ..
+  898  cd ishanu/DEEPPURPLE/
+  899  ls -lhtr
+  900  cd code/
+  901  ls -lhtr
+  902  cd code_semantic
+  903  ls
+  904  pwd
+  905  exit
+  906  cd /project2/ishanu
+  907  ls
+  908  cd CRIME
+  909  ls -lhtr
+  910  cat README 
+  911  cd ..
+  912  ls
+  913  cd DEEPPURPLE/
+  914  ls
+  915  cd code/
+  916  ls
+  917  cd code_semantic
+  918  ls
+  919  cd ..
+  920  ls -lhtr
+  921  cd code_semantic
+  922  ls
+  923  cd ..
+  924  ls
+  925  cd project2/ishanu
+  926  cd /project2/ishanu
+  927  ls
+  928  cd JUMP/
+  929  ls
+  930  cd code/
+  931  ls
+  932  cd ..
+  933  cd code/pycode/
+  934  ls
+  935  cat README
+  936  cd ..
+  937  ls
+  938  pwd
+  939  cd tex
+  940  ls
+  941  cd ..
+  942  cd code/pycode
+  943  ls
+  944  rm README~
+  945  ls
+  946  emacs dec_tree.py &
+  947  cd STATIC/
+  948  ls
+  949  ls -lhtr
+  950  cat run_control.sh
+  951  ls -lhtr
+  952  cd RESULT/
+  953  ls
+  954  cd ..
+  955  ls
+  956  cd testA
+  957  ls
+  958  cd ../bin/
+  959  ls
+  960  cd causality_network 
+  961  ./causality_network 
+  962  ./causality_network -h
+  963  cd /project2/ishanu
+  964  ls
+  965  mkdir JUMP
+  966  ls
+  967  cd JUMP/
+  968  ls
+  969  cat TODO
+  970  cd code/pycode/
+  971  ls
+  972  ./rf_x.py --help
+  973  module load python-2.7
+  974  module load python
+  975  ./rf_x.py --help
+  976  module list 
+  977  python rf_x.py --help
+  978  cd ..
+  979  cd JUMP
+  980  cd ..
+  981  ls JUMP
+  982  cd code/pyc
+  983  cd JUMP/
+  984  cd code/pycode/
+  985  ls
+  986  cd ../
+  987  ca TODO 
+  988  ls
+  989  cat TODO 
+  990  cd data
+  991  ls
+  992  cd ..
+  993  cat README 
+  994  cd data
+  995  cat script001.sh 
+  996  cat AA_Human_20142015
+  997  ls
+  998  cd ..
+  999  ls
+ 1000  cat TODO
+ 1001  while true; do cat IXC3gBeYnO.out; sleep 5; clear; done
+ 1002  ls -lhtr
+ 1003  cat IXC3gBeYnE.err 
+ 1004  squeue -u ishanu
+ 1005  cat IXC3gBeYnO.out 
+ 1006  cat /project2/ishanu/flurun_/RESULTS/mcmc_res_factors_16_29.txt
+ 1007  cat /project2/ishanu/flurun_/RESULTS/mcmc_res_factors_16_29.txt-
+ 1008  cd RESULTS/
+ 1009  ls -lhtr
+ 1010  cat res_parameters_16_29.txt-57
+ 1011  ls -lhtr
+ 1012  cat mcmc_res_factors_16_29.txt-57
+ 1013  ls -lhtr
+ 1014  cat  mcmc_res.txt-57
+ 1015  cd ..
+ 1016  ls -lhtr
+ 1017  cat runmc_pred.sh
+ 1018  while true; do cat IXCkZzOozO.out; sleep 5; clear; done
+ 1019  squeue -u ishanu
+ 1020  ls -lhtr
+ 1021  cat IXCkZzOozE.err 
+ 1022  while true; do cat res; sleep 5; clear; done
+ 1023  cat IXCkZzOozE.err 
+ 1024  ls -lhtr
+ 1025  cat IXCD95vwCE.err 
+ 1026  while true; do cat res; sleep 5; clear; done
+ 1027  ls -lhtr
+ 1028  cat IXCpgCnqAE.err 
+ 1029  squeue -u ishanu
+ 1030  ls -lhtr
+ 1031  cat IXCx7FFDRO.out 
+ 1032  cd RESULTS/
+ 1033  ls -lhtr
+ 1034  cat NX_mcmc_res_factors_16_29.txt-113 
+ 1035  vi coeff.txt
+ 1036  cat coeff.txt 
+ 1037  head -n 1 ../data/flu_vac_div.csv 
+ 1038  cat NX_mcmc_res_factors_16_29.txt-113 
+ 1039  cat coeff.txt 
+ 1040  cd .
+ 1041  cd ..
+ 1042   ls -lhtr
+ 1043  cat mcmc_flu_pred.r
+ 1044  cd RE1	[2~
+ 1045  cd RESULTS/
+ 1046  vi weeks_not_used.dat
+ 1047  ls -lhtr
+ 1048  cat coeff.txt 
+ 1049  head -n 1 ../data/flu_vac_div.csv 
+ 1050  head -n 1 ../data/flu_vac_div.csv | sed 's/,/g'
+ 1051  head -n 1 ../data/flu_vac_div.csv | sed 's/,//g'
+ 1052  head -n 1 ../data/flu_vac_div.csv | sed 's/,/\n/g'
+ 1053  head -n 1 ../data/flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g'
+ 1054  head -n 1 ../data/flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' | cat -n > colums.dat
+ 1055  head colums.dat 
+ 1056  head -n 1 ../data/flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' | cat -n | awk '{print $1-1,$2}' 
+ 1057  head -n 1 ../data/flu_vac_div.csv | sed 's/,/\n/g' | sed 's/"//g' | cat -n | awk '{print $1-1,$2}' > colums.dat 
+ 1058  head colums.dat 
+ 1059  vi colums.dat 
+ 1060  cat coeff.txt 
+ 1061  mkdir code
+ 1062  cd co
+ 1063  cd code
+ 1064  module load gcc-4.9
+ 1065  module avail gcc
+ 1066  module load gcc/6.1
+ 1067  g++ -O3 proc_.cc -o proc_
+ 1068  ./proc_ 
+ 1069  cat ../weeks_not_used.dat 
+ 1070  sed -i 's/,/ /g' ../weeks_not_used.dat 
+ 1071  cat ../weeks_not_used.dat 
+ 1072  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1073  g++ -O3 proc_.cc -o proc_
+ 1074  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1075  g++ -O3 proc_.cc -o proc_
+ 1076  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1077  vi ../coeff.txt 
+ 1078  g++ -O3 proc_.cc -o proc_
+ 1079  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1080  cp ../coeff.txt tmp
+ 1081  vi tmp 
+ 1082  ./proc_ tmp ../colums.dat ../weeks_not_used.dat 
+ 1083  rm tmp
+ 1084  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1085  g++ -O3 proc_.cc -o proc_
+ 1086  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1087  g++ -O3 proc_.cc -o proc_
+ 1088  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1089  g++ -O3 proc_.cc -o proc_
+ 1090  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat 
+ 1091  head -n 2 ../../data/flu_vac_div.csv 
+ 1092  cp ../../data/flu_vac_div.csv ../
+ 1093  sed -i 's/,/ /g' ../flu_vac_div.csv 
+ 1094  head -n 1 ../flu_vac_div.csv 
+ 1095  sed -i 1d ../flu_vac_div.csv 
+ 1096  head -n 1 ../flu_vac_div.csv 
+ 1097  sed -i 's/"/ /g' ../flu_vac_div.csv 
+ 1098  head -n 1 ../flu_vac_div.csv 
+ 1099  g++ -O3 proc_.cc -o proc_
+ 1100  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1101  g++ -O3 proc_.cc -o proc_
+ 1102  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1103  g++ -O3 proc_.cc -o proc_
+ 1104  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1105  g++ -O3 proc_.cc -o proc_
+ 1106  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1107  g++ -O3 proc_.cc -o proc_
+ 1108  head -n 1 ../flu_vac_div.csv 
+ 1109  g++ -O3 proc_.cc -o proc_
+ 1110  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1111  head ../colums.dat 
+ 1112  g++ -O3 proc_.cc -o proc_
+ 1113  ./proc_ ../coeff.txt ../colums.dat ../weeks_not_used.dat ../flu_vac_div.csv 
+ 1114  ls -lhtr
+ 1115  cat out.txt 
+ 1116  wc -l out.txt 
+ 1117  wc -l ../flu_vac_div.csv 
+ 1118  cat ../colums.dat 
+ 1119  cut -d " " -f8 ../flu_vac_div.csv 
+ 1120  head ../colums.dat 
+ 1121  cut -d " " -f2-3,8 ../flu_vac_div.csv  > flu
+ 1122  head flu
+ 1123  cut -d " " -f2-3,8 ../flu_vac_div.csv  
+ 1124  head ../flu_vac_div.csv > tmp
+ 1125  cat tmp
+ 1126  cut -d " " -f2-3,8 tmp
+ 1127  awk '{print $2,$3,$8}' tmp
+ 1128  awk '{print $2,$3,$8}' ../flu_vac_div.csv 
+ 1129  awk '{print $2,$3,$8}' ../flu_vac_div.csv  > flu 
+ 1130  cat flu 
+ 1131  paste -d " " flu out.txt > flu_res_.txt
+ 1132  cat flu_res_.txt 
+ 1133  cat ../weeks_not_used.dat 
+ 1134  awk '$2==345{print $3,$4}' flu_res_.txt > res_345
+ 1135  cat res_345 
+ 1136  pwd
+ 1137  history > COMMANDS.dat
