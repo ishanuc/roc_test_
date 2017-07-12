@@ -1,11 +1,8 @@
 #!/usr/bin/python
-
-import numpy as np
-import matplotlib as mpl
+import latexfig as lfg
 from sklearn import metrics
 import pandas as pd
 import seaborn as sns
-import latexfig as lfg
 
 import matplotlib.pyplot as plt
 import sys
@@ -64,7 +61,7 @@ font = {#'family' : 'normal',
         'weight' : 'bold',
         'size'   : 32}
 
-mpl.rc('font', **font)
+lfg.mpl.rc('font', **font)
 
 fd=pd.read_csv('./code/filenames2.txt',header=None)
 fd.columns=['files']
@@ -81,7 +78,7 @@ FS1=10
 R=3
 C=3
 
-for num in np.arange(R*C):
+for num in lfg.np.arange(R*C):
     i=num/C
     j=num-(i*C)    
     
@@ -97,4 +94,4 @@ for num in np.arange(R*C):
         ax.set_ylabel('')
             
 #plt.savefig('PRED_5'+'.pdf',dpi=1200, bbox_inches='tight')
-lfg.savefig('PRED_5'+'.pgf')
+lfg.savefig('PRED_5')

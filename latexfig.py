@@ -40,7 +40,7 @@ sns.color_palette("pastel")
 
 # I make my own newfig and savefig functions
 def newfig(width):
-    plt.clf()
+#    plt.clf()
     fig = plt.figure(figsize=figsize(width))
     ax = fig.add_subplot(111)
     return fig, ax
