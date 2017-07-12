@@ -69,7 +69,7 @@ fnames=fd.values
 
 sns.set_style('darkgrid')
 #fig=plt.figure(figsize=(10,10))
-fig,ax=lfg.newfig(.9)
+fig,ax=lfg.newfig(3)
 fig.subplots_adjust(hspace=0.2)
 fig.subplots_adjust(wspace=.1)
 FS=10
