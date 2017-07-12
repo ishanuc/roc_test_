@@ -8,8 +8,8 @@ def figsize_(fig_width_pt,scale2=1):
     fig_width_pt = 225                          # Get this from LaTeX using \the\textwidth
     inches_per_pt = 1.0/72.27                       # Convert pt to inch
     golden_mean = (np.sqrt(5.0)-1.0)/2.0            # Aesthetic ratio (you could change this)
-    fig_width = fig_width_pt*inches_per_pt*scale    # width in inches
-    fig_height = scale2*fig_width*golden_mean*.9              # height in inches
+    fig_width = fig_width_pt*inches_per_pt    # width in inches
+    fig_height = scale2*fig_width              # height in inches
     fig_size = [fig_width,fig_height]
     return fig_size
 
