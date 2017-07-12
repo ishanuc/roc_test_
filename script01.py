@@ -18,10 +18,10 @@ def roc_(d,TH=2,ax='',week=''):
         plt.figure(figsize=(4,4))
     else:
         plt.sca(ax)
-    lw = 2
-    plt.plot(fpr, tpr, color='darkorange',
+    lw = 3
+    plt.plot(fpr, tpr, color='#00e68a',
          lw=lw, label='ROC curve (area = %0.2f)' % roc_auc)
-    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+    plt.plot([0, 1], [0, 1], color='black', lw=lw, linestyle='--')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
     plt.xlabel('False Positive Rate',fontweight='bold',fontsize=12)
@@ -69,7 +69,7 @@ fnames=fd.values
 
 sns.set_style('darkgrid')
 #fig=plt.figure(figsize=(10,10))
-fig,ax=lfg.newfig(3)
+fig,ax=lfg.newfig(6)
 fig.subplots_adjust(hspace=0.2)
 fig.subplots_adjust(wspace=.1)
 FS=10
