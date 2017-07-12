@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1499842084 "test.tex" "test.pdf" "test" 1499842089
+["pdflatex"] 1499842327 "test.tex" "test.pdf" "test" 1499842330
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1136768653 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""
@@ -226,16 +226,17 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1481505726 31707 016c7161f5b4b84c364872b88d43a2f5 ""
   "/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1463113565 32521 dfb9277dd9a0c560c9ced88316fd0a82 ""
   "/usr/share/texlive/texmf-var/web2c/pdftex/pdflatex.fmt" 1481505779 3822332 74bd52549ce4fc3c22be44331a9fab86 ""
-  "Figures/External/test-figure0.dpth" 1499840749 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Figures/External/test-figure0.md5" 1499840748 62 06374aa2432b9f9a0837a8a01c9b7304 ""
-  "Figures/External/test-figure0.pdf" 1499840749 34778 0ae9110f13bcb7f582798057d480a1a6 ""
+  "Figures/External/test-figure0.dpth" 1499842327 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Figures/External/test-figure0.md5" 1499842326 62 a93c10e313600874697bc73949edff35 ""
+  "Figures/External/test-figure0.pdf" 1499842327 39650 b69afef5ef7dd454a88edce321ba11c9 ""
   "preamble.tex" 1499840367 11232 88304a2994669af4e9886b22e65f2669 ""
-  "test.aux" 1499842085 945 a980a37a1ca82af98bf0125fc61d5b41 ""
-  "test.out" 1499842085 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "test.tex" 1499842062 749 0e46c60296d86c94113dc94370ef3ae1 ""
+  "test.aux" 1499842328 945 a980a37a1ca82af98bf0125fc61d5b41 ""
+  "test.out" 1499842328 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "test.tex" 1499842314 750 cd26520b8b718f15f59c009a5f3ccd33 ""
   (generated)
-  "test.log"
-  "test.aux"
   "test.auxlock"
   "test.out"
+  "test.log"
   "test.pdf"
+  "test.aux"
+  "Figures/External/test-figure0.md5"

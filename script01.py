@@ -94,4 +94,4 @@ for num in lfg.np.arange(R*C):
         ax.set_ylabel('')
             
 #plt.savefig('PRED_5'+'.pdf',dpi=1200, bbox_inches='tight')
-lfg.savefig('PRED_5')
+lfg.savefig('pPRED_5')
